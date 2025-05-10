@@ -1,0 +1,113 @@
+/* estilos.css */
+
+/*Se definen variables que guardan valores para poder reutilizarlos en el codigo*/
+:root{
+   
+    --fuente-base: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+    --color-primario: #007bff;
+}
+
+/*ayuda a que la pagina sea responsive*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+    background-color: #802F33 ;
+}
+
+.contenido{
+   background-color: #F4EDE5; 
+   font-family: var(--fuente-base);
+   color: #2C2A26;
+}
+
+a{
+    color: #E3B845;
+}
+/*
+.cabecera {
+    background-color: #2e3a59;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+#titulo {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.menu {
+    background-color: #4f5d75;
+    padding: 1rem;
+}
+
+#lista-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.menu-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-link:hover {
+    text-decoration: underline;
+}
+
+.cuerpo{
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+}
+
+.titulos-cuerpo{
+    color: #2e3a59;
+    margin-bottom: 1rem;
+}
+
+#beneficios-lista {
+    padding-left: 1.5rem;
+} 
+    */
+
+/*pie de pagina*/
+
+/*
+.pie {
+    background-color: #2e3a59;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.pie a {
+    color: #f0c674;
+    text-decoration: none;
+}
+
+.pie a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+*/ 
