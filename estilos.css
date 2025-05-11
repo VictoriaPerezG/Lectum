@@ -1,10 +1,12 @@
 /* estilos.css */
 
 /*Se definen variables que guardan valores para poder reutilizarlos en el codigo*/
-:root{
-   
-    --fuente-base: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
-    --color-primario: #007bff;
+:root {
+
+    --fuente-base: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --color-primario: #802F33;
+    --color-secundario: #E3B845;
+    --color-botones: #1a4a5b;
 }
 
 /*ayuda a que la pagina sea responsive*/
@@ -12,102 +14,48 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-.menu{
-    background-color: #802F33 ;
-}
-
-.contenido{
-   background-color: #F4EDE5; 
-   font-family: var(--fuente-base);
-   color: #2C2A26;
-}
-
-a{
-    color: #E3B845;
-}
-/*
-.cabecera {
-    background-color: #2e3a59;
-    color: white;
-    padding: 2rem;
-    text-align: center;
-}
-
-#titulo {
-    margin: 0;
-    font-size: 2.5rem;
+    font-family: var(--fuente-base);
 }
 
 .menu {
-    background-color: #4f5d75;
-    padding: 1rem;
+    background-color: var(--color-primario);
 }
 
-#lista-menu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
+.contenido {
+    background-color: #F4EDE5;
+    font-family: var(--fuente-base);
+    color: #2C2A26;
 }
 
-.menu-link {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+.banner-boton {
+    background-color: var(--color-botones);
+    color: #F4EDE5;
+    border: 1px solid #F4EDE5;
+    padding: 8px 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.menu-link:hover {
-    text-decoration: underline;
-}
+.banner-boton:hover {
+    background-color: var(--color-secundario);
+    transform: scale(1.1);
 
-.cuerpo{
-    padding: 2rem;
-    max-width: 900px;
-    margin: auto;
-}
-
-.titulos-cuerpo{
-    color: #2e3a59;
-    margin-bottom: 1rem;
-}
-
-#beneficios-lista {
-    padding-left: 1.5rem;
-} 
-    */
-
-/*pie de pagina*/
-
-/*
-.pie {
-    background-color: #2e3a59;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-}
-
-.pie a {
-    color: #f0c674;
-    text-decoration: none;
-}
-
-.pie a:hover {
-    text-decoration: underline;
 }
 
 
-
-
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
+.menu .nav-link {
+    color: #F4EDE5 ; 
 }
 
-*/ 
+
+.menu .nav-link:hover {
+    color: var(--color-secundario); 
+}
+
+
+.imagen-inicio {
+  max-height: 500px;
+}
