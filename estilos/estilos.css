@@ -3,72 +3,72 @@
 /*Se definen variables que guardan valores para poder reutilizarlos en el codigo*/
 :root {
 
-    --fuente-base: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    --color-primario: #802F33;
-    --color-secundario: #E3B845;
-    --color-claro: #F4EDE5;
-    --color-botones: #1a4a5b;
+  --fuente-base: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --color-primario: #802F33;
+  --color-secundario: #E3B845;
+  --color-claro: #F4EDE5;
+  --color-botones: #1a4a5b;
 }
 
 /*ayuda a que la pagina sea responsive*/
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: var(--fuente-base);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--fuente-base);
 }
 
 .menu {
-    background-color: var(--color-primario);
+  background-color: var(--color-primario);
 }
 
 .contenido {
-    background-color: var(--color-claro);
-    font-family: var(--fuente-base);
-    color: #2C2A26;
+  background-color: var(--color-claro);
+  font-family: var(--fuente-base);
+  color: #2C2A26;
 }
 
 .boton {
-    background-color: var(--color-botones);
-    color: var(--color-claro);
-    border: 1px solid var(--color-claro);
-    padding: 8px 8px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-bottom: 10px;
-    border-radius: 8px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    text-decoration: none;
+  background-color: var(--color-botones);
+  color: var(--color-claro);
+  border: 1px solid var(--color-claro);
+  padding: 8px 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  text-decoration: none;
 }
 
 .boton:hover {
-    background-color: var(--color-secundario);
-    transform: scale(1.1);
+  background-color: var(--color-secundario);
+  transform: scale(1.1);
 
 }
 
 
 .menu .nav-link {
-    color: var(--color-claro) ; 
+  color: var(--color-claro);
 }
 
 
 .menu .nav-link:hover {
-    color: var(--color-secundario); 
+  color: var(--color-secundario);
 }
 
 .imagen-inicio {
   width: 100%;
-  height: 50vh; 
+  height: 50vh;
   overflow: hidden;
 }
 
 .imagen-inicio img {
   width: 100%;
   height: 100%;
-  object-fit:cover;
-  display:block;
-  
+  object-fit: cover;
+  display: block;
+
 }
 
 /* Pantallas grandes */
@@ -83,4 +83,30 @@
   .imagen-inicio {
     height: 40vh;
   }
+}
+
+
+/*Estilos fotos del carrusel de imagenes*/
+
+.imagen-principal {
+  height: 400px;
+  object-fit: cover;
+}
+
+.miniatura-imagen {
+  width: 100px;
+  height: 60px;
+  object-fit: cover;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.3s, border-color 0.3s;
+}
+
+.miniatura-imagen.activa {
+  opacity: 1;
+  border: 2px solid #0d6efd;
+}
+
+.miniatura-imagen:hover {
+  opacity: 1;
 }
