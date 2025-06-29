@@ -85,6 +85,10 @@
   }
 }
 
+/*Estilos para el formulario*/
+.formulario {
+  max-width: 500px;  
+}
 
 /*Estilos fotos del carrusel de imagenes*/
 
