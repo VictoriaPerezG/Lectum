@@ -98,8 +98,8 @@
 }
 
 .miniatura-imagen {
-  width: 100px;
-  height: 60px;
+  width: 150px;
+  height: 100px;
   object-fit: cover;
   cursor: pointer;
   opacity: 0.6;
