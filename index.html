@@ -14,33 +14,40 @@
 <body class="contenido">
 
     <!--NAVEGACION-->
-    <nav class="navbar navbar-expand-lg mt-auto menu">
+    <nav class="navbar navbar-expand-lg navbar-dark menu">
         <div class="container">
-            <a class="navbar-brand text-white" href="index.html">LECTUM</a>
-            <ul class="nav justify-content-end menu">
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="index.html">INICIO</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contenido.html">BENEFICIOS DE LEER</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contacto.html">CONTACTO</a>
-                </li>
-            </ul>
+            <a class="navbar-brand" href="index.html"><i class="bi bi-book fs-4"></i> LECTUM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLectum"
+                aria-controls="navbarLectum" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarLectum">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contenido.html">BENEFICIOS DE LEER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
+
+
 
     <!--IMAGEN INICIO-->
     <div id="carouselExampleCaptions" class="carousel slide">
         <div class="imagen-inicio">
-                <img src="fotos/tom-hermans-9BoqXzEeQqM-unsplash.jpg" class="img-fluid d-block" 
-                    alt="...">
-                <div class="carousel-caption ">
-                    <h5>EDITORIAL LECTUM</h5>
-                    <p class="fst-italic">"Vivir sin leer es peligroso, porque obliga a conformarse con la vida"</p>
-                    <a href="#nosotros" class="boton">Conócenos</a> 
-                </div>
+            <img src="fotos/tom-hermans-9BoqXzEeQqM-unsplash.jpg" class="img-fluid d-block" alt="...">
+            <div class="carousel-caption ">
+                <h5>EDITORIAL LECTUM</h5>
+                <p class="fst-italic">"Vivir sin leer es peligroso, porque obliga a conformarse con la vida"</p>
+                <a href="#nosotros" class="boton">Conócenos</a>
+            </div>
         </div>
     </div>
 
@@ -51,17 +58,18 @@
                 <div class="col-lg-6">
                     <div class="p-5">
                         <h2 class="display-4">Sobre nosotros</h2>
-                        <p class="lead"> 
+                        <p class="lead">
                             En Editorial Lectum, creemos en el poder transformador de la lectura.
                             Ademas de publicar libros, sembramos el hábito de leer como un acto de libertad,
-                            descubrimiento y crecimiento personal. Nuestra misión es construir puentes entre escritores y lectores,
+                            descubrimiento y crecimiento personal. Nuestra misión es construir puentes entre escritores
+                            y lectores,
                             fomentando historias que invitan a pensar, soñar y leer más.</p>
-                        <a href="contacto.html" class="boton">Contáctanos</a>
+                        <a href="contacto.html" class="boton w-100 ">Contáctanos</a>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="p-10 mt-lg-4 mb-4"><img class="img-fluid rounded" src="fotos/thought-catalog-mmWqrsjZ4Lw-unsplash.jpg"
-                            alt="..." /></div>
+                    <div class="p-10 mt-lg-4 mb-4"><img class="img-fluid rounded"
+                            src="fotos/thought-catalog-mmWqrsjZ4Lw-unsplash.jpg" alt="..." /></div>
                 </div>
             </div>
         </div>
@@ -113,10 +121,43 @@
             </section>
             <!-- Boton -->
             <div class="text-center mt-4 mb-4">
-                <a href="contenido.html" class="boton text-white">Descubre mas</a>
+                <a href="contenido.html" class="boton text-white w-100 ">Descubre mas</a>
             </div>
         </div>
     </section>
+
+    <!-- SECCION LISTA -->
+    <section>
+        <div class="container my-5 ">
+            <div class="row justify-content-center g-4">
+                <div class="col-12 col-lg-5">
+                    <div class=" p-4 h-100">
+                        <h3 class=" mb-3">¿Por qué una Lista de deseos?</h3>
+                        <p>
+                            En Lectum nos encanta ayudarte a recordar todos los títulos que despiertan tu curiosidad.
+                            Con esta “Lista de deseos de lectura” podrás organizar tus próximas lecturas, descubrir
+                            nuevos libros
+                            y asegurarte de que ningún título quede en el olvido.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5">
+                    <div class="card p-4 shadow h-100">
+                        <h3 class="text-center mb-3">📚 Lista de deseos de Lectura</h3>
+                        <div class="input-group mb-3">
+                            <input type="text" id="nueva-tarea" class="form-control"
+                                placeholder="Agregar libro o deseo...">
+                            <a id="agregar-tarea" class="boton">Agregar</a>
+                        </div>
+                        <ul id="lista-tareas" class="list-group">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!--FOOTER-->
     <footer class="bg-dark text-secondary border-top mt-auto py-3">
@@ -146,8 +187,9 @@
             </div>
         </div>
     </footer>
-    
+
     <!--SCRIPT BT-->
+    <script src="js/lista.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>

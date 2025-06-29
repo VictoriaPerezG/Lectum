@@ -20,7 +20,13 @@
 
 .menu {
   background-color: var(--color-primario);
+  color: var(--color-claro);
 }
+
+.navbar-toggler {
+   border-color: var(--color-claro);
+  }
+
 
 .contenido {
   background-color: var(--color-claro);
@@ -39,6 +45,7 @@
   border-radius: 8px;
   transition: transform 0.3s ease, background-color 0.3s ease;
   text-decoration: none;
+
 }
 
 .boton:hover {
@@ -87,11 +94,13 @@
 
 /*Estilos para el formulario*/
 .formulario {
-  max-width: 500px;  
+  max-width: 500px;
 }
 
-/*Estilos fotos del carrusel de imagenes*/
 
+
+
+/*Estilos fotos del carrusel de imagenes*/
 .imagen-principal {
   height: 400px;
   object-fit: cover;
@@ -113,4 +122,21 @@
 
 .miniatura-imagen:hover {
   opacity: 1;
+}
+
+/*Estilo para que el footer quede abajo a pesar de no tener mucho contenido */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
 }
