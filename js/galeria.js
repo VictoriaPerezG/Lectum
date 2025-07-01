@@ -25,12 +25,15 @@ const elementos = [
   ];
 
 
+  // Recuperación de los elementos en el html para formar las cards 
   const imagenPrincipal = document.getElementById('imagenPrincipal');
   const fechaPrincipal = document.getElementById('fechaPrincipal');
   const tituloPrincipal = document.getElementById('tituloPrincipal');
   const descripcionPrincipal = document.getElementById('descripcionPrincipal');
   const enlacePrincipal = document.getElementById('enlacePrincipal');
 
+
+  //Función que rellena la card que se muestra grande con su información 
   function actualizarPrincipal(indice) {
     const item = elementos[indice];
     imagenPrincipal.src = item.imagen;
@@ -44,6 +47,7 @@ const elementos = [
     });
   }
 
+  //Recorrido de cada uno de las cards 
   elementos.forEach((item, indice) => {
     const contenedor = document.createElement('div');
     contenedor.className = 'contenedor-miniatura';
