@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const li = document.createElement("li");
         li.className = "list-group-item d-flex justify-content-between align-items-center";
 
-        // Crear el elemento de texto con opción de tachado al hacer clic
+        
         const span = document.createElement("span");
         span.textContent = texto;
         span.style.cursor = "pointer";

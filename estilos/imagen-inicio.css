@@ -1,0 +1,23 @@
+/* Estilos para imagen de inicio */
+
+:root {
+  --color-claro: #F4EDE5;
+}
+
+.fondo-caption {
+    background-color: rgba(0, 0, 0, 0.6); 
+    color: var(--color-claro);
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    max-height: 80vh;
+    width: 100%;
+}
+
+.carousel-caption {
+    bottom: 20%;
+}
